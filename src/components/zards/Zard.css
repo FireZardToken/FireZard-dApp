@@ -1,0 +1,294 @@
+.result_amount{
+    float: left;
+    /* text-transform: lowercase; */
+    color: #ff963d;
+    font-family: DINCondensed;
+}
+.LSelect{
+    float: left;
+    width: 150px;
+    height: 30px;
+    background-color: #ff963d;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 2px solid #5a6172;
+    font-family: DINCondensed;
+    margin-top: -3px;
+}
+.selectKey{
+    text-align: left;
+    padding-left: 10px;
+    width: 120px;
+}
+.selectDrop{
+    float: right;
+    width: 10px;
+    margin-top: -30px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.RSelect{
+    float: right;
+}
+.RSearch{
+    float: right;
+}
+.rightDiv{
+    position: relative;
+    padding: 10px 5px 150px 10px;
+}
+.RightHead{
+    float: left;
+    width: 100%;
+}
+.searchIMG{
+    width: 23px;
+    float: right;
+}
+.searchInput{
+    float: right;
+    font-family: DINCondensed;
+    background-color: #2f518f;
+    border: 0px;
+    color:  #ff963d;
+}
+.searchInput:focus{
+    border-width: 0px;
+    outline: none !important;
+}
+.search_box{
+    border-bottom: 2px solid #ff963d;
+    float: right;
+}
+.searchInput::placeholder{
+    color: #ff963d !important;
+}
+.RSelect{
+    float: right;
+    width: 150px;
+    height: 30px;
+    background-color: #ff963d;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 2px solid #5a6172;
+    font-family: DINCondensed;
+    margin-top: -3px;
+}
+.RightMain{
+    margin-top: 100px;
+    flex-direction: 'row';
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+}
+.eachDiv{
+    /* width: 210px; */
+    width: 14vmax;
+    height: 400px;
+    min-height: 27vmax;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#68acff, #86effe);
+    padding: 10px;
+}
+.itemID{
+    color: #ff963d;
+    font-family: hemiHeadBd;
+    float: left;
+    border: 1px solid #fff;
+    /* padding: 5px 20px 5px 5px; */
+    padding: 0.5vmax 1.5vmax 0.5vmax 0.5vmax;
+    background-color: #3761ae;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.elect{
+    float: right;
+    /* margin-top: 20px; */
+    margin-top: 1.2vmax;
+    /* width: 25px; */
+    width: 1.8vmax;
+}
+.oneIMG{
+    /* width: 180px; */
+    width: 12vmax;
+    margin-top: 20px;
+}
+.ratingDiv{
+    margin-top: 23px
+}
+.ratingIMG{
+    width: 30px;
+    float: left;
+}
+.price1{
+    font-family: hemiHeadBd;
+    color: #3761ae;
+    font-size: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.price2{
+    font-family: hemiHeadBd;
+    color: #3761ae;
+    font-size: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 6.5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #fafafa;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 100px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c1c1c1;
+}
+
+.leftDiv{
+    padding: 30px;
+    width: 100vh;
+    overflow-y: scroll;
+}
+.filterResult{
+    float: left;
+    color: #ff963d;
+}
+.filterType{
+    color: #ff963d;
+    font-family: DINCondensed;
+    text-align: left;
+    font-size: 20px;
+}
+.filterSetting{
+    display: grid;
+    float: left;
+}
+.fireNone, .water{
+    /* width: 60px; */
+    width: 3vmax;
+}
+.fireNone{
+    float: left;
+}
+.water{
+    float: right;
+}
+.line1, .line2, .line3{
+    float: left;
+    width: 17vmax;
+}
+.checkBox{
+    float: left;
+    background-color: #2f518f;
+}
+.MuiCheckbox-colorSecondary.Mui-checked{
+    color: #fff !important;
+}
+.MuiCheckbox-root{
+    color: #fff !important;
+    margin-top: 0.7vmax !important;
+    border-radius: 10px !important;
+    width: 3vmax !important;
+}
+.checkBox1{
+    float: right;
+}
+.line2, .line3{
+    margin-top: 10px;
+}
+.Rarity{
+    margin-top: 20px;
+}
+@media all and (max-width: 768px){
+    .RightMain{
+        display: block;
+    }
+    .eachDiv{
+        width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    }
+    .itemID{
+        padding: 5px 20px 5px 5px;
+    }
+    .elect{
+        margin-top: 20px;
+        width: 25px;
+    }
+    .oneIMG{
+        width: 180px;
+    }
+}
+@media all and (max-width: 1200px){
+    .MuiCheckbox-root{
+        margin-top: 0vmax !important;
+    }
+}
+@media all and (max-width: 768px){
+    .line2, .line3{
+        margin-top: 0px !important;
+        margin-left: 50px;
+    }
+    .line3{
+      margin-left: 0px
+    }
+    .filterSetting{
+        width: 100%;
+    }
+    .filterSelect{
+        width: 100%;
+    }
+    .line1, .line2, .line3{
+        width: 26vmax;
+    }
+    .fireNone, .water{
+        margin-left: 10px;
+    }
+    .leftDiv{
+      overflow-y: auto;
+    }
+}
+@media all and (max-width: 416px){
+    .RSelect{
+        margin-top: 15px;
+    }
+}
+@media all and (max-width: 547px){
+    .mobile-menu-icon{
+        top: 1vmax;
+    }
+}
+@media all and (max-width: 727px){
+    .line3{
+        margin-left: 0px
+    }
+}
+@media all and (max-width: 457px){
+    .line2{
+        margin-left: 0px
+    }
+}
+.wallet{
+    cursor: pointer;
+}
+.form-select{
+    width: 140px;
+    border: 0;
+    background-color: #ff963d;
+    color: #fff;
+}

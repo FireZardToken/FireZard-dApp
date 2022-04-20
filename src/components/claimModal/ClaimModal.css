@@ -1,0 +1,86 @@
+@media (min-width: 576px) {
+    .claim-modal .modal-dialog {
+        max-width: 50%;
+    }
+}
+
+
+.claim-modal .modal-body {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.claim-modal .modal-content {
+    background-color: #274f93;
+}
+
+.claim-modal .modal-header {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    background: -webkit-linear-gradient(#e74b26, #f4cb4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.claim-modal .claim-card {
+    background-color: #58aaff;
+}
+
+.claim-modal .claim-card .card-title {
+    background: -webkit-linear-gradient(#e74b26, #f4cb4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.claim-modal .claim-card .card-text {
+    /* color: #fd9128; */
+    color: #fff;
+}
+
+.claim-modal .zard-card {
+    background: transparent;
+    border: none;
+}
+
+.claim-modal .zard-card .card-text {
+    color: #fff;
+}
+
+.claim-modal .claim-card .zard-info-container {
+    border: 3px solid #fef4a9 !important;
+    border-radius: 10px;
+    background-color: #45a1eb !important;
+}
+
+.claim-modal .claim-card .zard-info-container p {
+    margin-bottom: 0;
+}
+
+.claim-modal .btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em;
+    color: #fff;
+    background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E") 50%/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: .5;
+}
+
+.claim-modal .modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+.claim-modal .modal-footer .btn {
+    font-size: 18px;
+    width: 40%;
+    border: 3px solid #fef4a9 !important;
+    border-radius: 10px;
+    background-color: #45a1eb !important;
+    color: white !important;
+}

@@ -1,0 +1,182 @@
+@font-face {
+  font-family: SubtleCurves;
+  src: url("./font/Subtle Curves/Subtle Curves.ttf");
+}
+@font-face {
+  font-family: SubtleCurves;
+  src: url("./font/Subtle Curves/Subtle Curves.otf");
+}
+@font-face {
+  font-family: DDinBold;
+  src: url("./font/D-DIN-PRO/FontsFree-Net-D-DIN-PRO-700-Bold.ttf");
+}
+@font-face {
+  font-family: Firestarter;
+  src: url("./font/FIRESTARTER.TTF");
+}
+@font-face {
+  font-family: DINCondensed;
+  src: url("./font/FontsFree-Net-D-DINCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: hemiHeadBd;
+  src: url("./font/hemi head bd it.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: SubtleCurves, SubtleCurves, AdobeInvisFont, "MyriadPro-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-family-ddinblod {
+  font-family: DDinBold, "MyriadPro-Regular" !important;
+}
+
+.App-container {
+  padding-top: 5vmax;
+}
+
+.connectButton {
+  font-size: large;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+::placeholder {
+  color: #bbb !important;
+}
+
+.table-condensed td,
+.table-condensed th {
+  padding: 0.9rem;
+}
+.table td pre {
+  margin-bottom: 0;
+}
+
+body {
+  color: #fff;
+  background-image: url("../images/lava@1X.png");
+  background-color: #3761ae;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+
+.apr-info-child {
+  float: right;
+  margin: auto;
+}
+
+/* For smaller devices */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .App-container {
+    padding: 0 10vmin;
+    padding-top: 30vmax;
+    font-size: x-large;
+  }
+  .connectButton {
+    font-size: large;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media only screen and (max-device-width: 576px) {
+  .App-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .App-container {
+    padding: 0 5vmin;
+    padding-top: 30vmax;
+  }
+  .connectButton {
+    font-size: small;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .apr-info {
+    margin-top: 25vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .apr-info-child {
+    float: unset;
+  }
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+  color: white;
+}
+
+.bg-white {
+  border-color: white !important;
+}
+
+small {
+  font-size: 0.8rem;
+  position: relative;
+  top: 1px;
+}
+.App {
+  text-align: center;
+}
+
+.purple-text {
+  color: #fff;
+}
+.purple-bg {
+  background-color: rgb(30, 1, 57);
+}
+.orange-text {
+  color: #ffd102;
+}
+
+.btn {
+  background: rgb(14, 132, 187) !important;
+  color: #fff !important;
+  border: 1px solid rgb(206, 117, 15) !important;
+}
+.btn:hover {
+  background: rgb(156, 95, 25) !important;
+  border-color: rgb(156, 95, 25) !important;
+}
+.btn {
+  background: rgb(231, 140, 36) !important;
+  border: 1px solidrgb(28, 182, 187) !important;
+}
+
+.tips {
+  color: #ddd;
+}
+.text-normal,
+.text-normal th,
+.text-normal strong {
+  font-weight: normal !important;
+}
+
+.table {
+  color: #fff;
+}
+strong,
+th {
+  font-weight: 600;
+}
+.route-content{
+  min-height: 100vh;
+}
+@media all and (max-width: 538px){
+  .RightMain{
+    position: relative;
+    top: 50px !important;
+  }
+}

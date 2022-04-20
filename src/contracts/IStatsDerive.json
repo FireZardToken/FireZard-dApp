@@ -1,0 +1,1859 @@
+{
+  "contractName": "IStatsDerive",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "tokenTypeCode",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nft_type",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "getStatInt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nft_type",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "getStatString",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nft_type",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "getStatByte32",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nft_type",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "getStatBool",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "nft_type",
+          "type": "bytes32"
+        }
+      ],
+      "name": "stats",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "enum Util.StatType",
+              "name": "statType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "is_mutable",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct Util.Stat[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nft_type\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"getStatBool\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nft_type\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"getStatByte32\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nft_type\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"getStatInt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nft_type\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"getStatString\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"nft_type\",\"type\":\"bytes32\"}],\"name\":\"stats\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"enum Util.StatType\",\"name\":\"statType\",\"type\":\"uint8\"},{\"internalType\":\"bool\",\"name\":\"is_mutable\",\"type\":\"bool\"}],\"internalType\":\"struct Util.Stat[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenTypeCode\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getStatBool(bytes32,uint256,string)\":{\"params\":{\"id\":\"An id generated by an RNG\",\"name\":\"The stats' name\"},\"returns\":{\"_0\":\"The stats' value*\"}},\"getStatByte32(bytes32,uint256,string)\":{\"params\":{\"id\":\"An id generated by an RNG\",\"name\":\"The stats' name\"},\"returns\":{\"_0\":\"The stats' value*\"}},\"getStatInt(bytes32,uint256,string)\":{\"params\":{\"id\":\"An id generated by an RNG\",\"name\":\"The stats' name\"},\"returns\":{\"_0\":\"The stats' value*\"}},\"getStatString(bytes32,uint256,string)\":{\"params\":{\"id\":\"An id generated by an RNG\",\"name\":\"The stats' name\"},\"returns\":{\"_0\":\"The stats' value*\"}},\"stats(bytes32)\":{\"returns\":{\"_0\":\"An enumerable set (actually, an array) of stats that can be derived by the interface implementation*\"}},\"tokenTypeCode()\":{\"returns\":{\"_0\":\"Token type code*\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getStatBool(bytes32,uint256,string)\":{\"notice\":\"Derive a boolean stat from the card's ID by the stats' name\"},\"getStatByte32(bytes32,uint256,string)\":{\"notice\":\"Derive a 32 byte array stat from the card's ID by the stats' name\"},\"getStatInt(bytes32,uint256,string)\":{\"notice\":\"Derive an integer stat from the card's ID by the stats' name\"},\"getStatString(bytes32,uint256,string)\":{\"notice\":\"Derive a string stat from the card's ID by the stats' name\"},\"stats(bytes32)\":{\"notice\":\"Defines a set of stats that can be derived\"},\"tokenTypeCode()\":{\"notice\":\"Token type code\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IStatsDerive.sol\":\"IStatsDerive\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IStatsDerive.sol\":{\"keccak256\":\"0xfd4cf80e9d941103ad8b1c2c883283de4fbd604116c013b621ec4c5a40a07221\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://22d4279159add73c987fd1ab6cb6475021bbc8d65e93d5d19a1b71225dd5df68\",\"dweb:/ipfs/QmZSNqdGyJBrGVfzrwcqwzeKf2EBbEwzREDwRDKPJdYfxf\"]},\"project:/contracts/Util.sol\":{\"keccak256\":\"0xf889ca733ae6bd43ea37a64d04d4e2509daa420fae5005fa37f14538391f8cb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://25e70b7c0736479b5550eeb3f81ea5a8c1139398a3e878cfcf8c0af22bc521a6\",\"dweb:/ipfs/QmRXAEnNyyAqDHcfgX6Cu1o8zJJj1uhCFBDCAE7JvzDwJH\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n/**\n * Derives stats from card ID\n * @title  Interface for deriving dragon card stats from its ID\n * @author CryptoHog\n * @notice Defines an interface for a contract deriving the stats from a randomly generated ID\n */\n\npragma solidity ^0.8.0;\n\nimport \"./Util.sol\";\n\ninterface IStatsDerive {\n\n    /**\n     * @notice Token type code\n     *\n     * @return Token type code\n    **/\n    function tokenTypeCode() external pure returns (bytes32);\n\n    /**\n     * @notice Derive an integer stat from the card's ID by the stats' name\n     *\n     * @param id An id generated by an RNG\n     * @param name The stats' name\n     * @return The stats' value\n    **/\n    function getStatInt(bytes32 nft_type, uint256 id, string calldata name) external view returns (uint256);\n\n    /**\n     * @notice Derive a string stat from the card's ID by the stats' name\n     *\n     * @param id An id generated by an RNG\n     * @param name The stats' name\n     * @return The stats' value\n    **/\n    function getStatString(bytes32 nft_type, uint256 id, string calldata name) external view returns (string calldata);\n\n    /**\n     * @notice Derive a 32 byte array stat from the card's ID by the stats' name\n     *\n     * @param id An id generated by an RNG\n     * @param name The stats' name\n     * @return The stats' value\n    **/\n    function getStatByte32(bytes32 nft_type, uint256 id, string calldata name) external view returns (bytes32);\n\n    /**\n     * @notice Derive a boolean stat from the card's ID by the stats' name\n     *\n     * @param id An id generated by an RNG\n     * @param name The stats' name\n     * @return The stats' value\n    **/\n    function getStatBool(bytes32 nft_type, uint256 id, string calldata name) external view returns (bool);\n\n    /**\n     * @notice Defines a set of stats that can be derived\n     *\n     * @return An enumerable set (actually, an array) of stats that can be derived by the interface implementation\n    **/\n    function stats(bytes32 nft_type) external view returns (Util.Stat[] memory);\n}\n",
+  "sourcePath": "/home/vrogojin/Projects/FireZard/nft/contracts/IStatsDerive.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IStatsDerive.sol",
+    "exportedSymbols": {
+      "IStatsDerive": [
+        8497
+      ],
+      "Util": [
+        11512
+      ]
+    },
+    "id": 8498,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8431,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "251:23:26"
+      },
+      {
+        "absolutePath": "project:/contracts/Util.sol",
+        "file": "./Util.sol",
+        "id": 8432,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8498,
+        "sourceUnit": 11513,
+        "src": "276:20:26",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStatsDerive",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8497,
+        "linearizedBaseContracts": [
+          8497
+        ],
+        "name": "IStatsDerive",
+        "nameLocation": "308:12:26",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 8433,
+              "nodeType": "StructuredDocumentation",
+              "src": "328:80:26",
+              "text": " @notice Token type code\n @return Token type code*"
+            },
+            "functionSelector": "54b10da1",
+            "id": 8438,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenTypeCode",
+            "nameLocation": "422:13:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8434,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "435:2:26"
+            },
+            "returnParameters": {
+              "id": 8437,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8436,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8438,
+                  "src": "461:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8435,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:9:26"
+            },
+            "scope": 8497,
+            "src": "413:57:26",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8439,
+              "nodeType": "StructuredDocumentation",
+              "src": "476:204:26",
+              "text": " @notice Derive an integer stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "30044d42",
+            "id": 8450,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatInt",
+            "nameLocation": "694:10:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8446,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8441,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "713:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "705:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8440,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "705:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8443,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "731:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "723:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8442,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "723:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8445,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "751:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "735:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8444,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "735:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "704:52:26"
+            },
+            "returnParameters": {
+              "id": 8449,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8448,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "780:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8447,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "780:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "779:9:26"
+            },
+            "scope": 8497,
+            "src": "685:104:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8451,
+              "nodeType": "StructuredDocumentation",
+              "src": "795:202:26",
+              "text": " @notice Derive a string stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "5f560e83",
+            "id": 8462,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatString",
+            "nameLocation": "1011:13:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8458,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8453,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1033:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1025:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8452,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1025:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8455,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1051:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1043:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8454,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1043:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8457,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1071:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1055:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8456,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1055:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1024:52:26"
+            },
+            "returnParameters": {
+              "id": 8461,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8460,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1100:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8459,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1100:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1099:17:26"
+            },
+            "scope": 8497,
+            "src": "1002:115:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8463,
+              "nodeType": "StructuredDocumentation",
+              "src": "1123:209:26",
+              "text": " @notice Derive a 32 byte array stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "82913d82",
+            "id": 8474,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatByte32",
+            "nameLocation": "1346:13:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8465,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1368:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1360:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8464,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1360:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8467,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1386:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1378:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8466,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1378:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8469,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1406:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1390:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8468,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1390:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1359:52:26"
+            },
+            "returnParameters": {
+              "id": 8473,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8472,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1435:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8471,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1435:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1434:9:26"
+            },
+            "scope": 8497,
+            "src": "1337:107:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8475,
+              "nodeType": "StructuredDocumentation",
+              "src": "1450:203:26",
+              "text": " @notice Derive a boolean stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "450a52d0",
+            "id": 8486,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatBool",
+            "nameLocation": "1667:11:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8482,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8477,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1687:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1679:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8476,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1679:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8479,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1705:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1697:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8478,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1697:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8481,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1725:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1709:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8480,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1709:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1678:52:26"
+            },
+            "returnParameters": {
+              "id": 8485,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8484,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1754:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 8483,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1754:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1753:6:26"
+            },
+            "scope": 8497,
+            "src": "1658:102:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8487,
+              "nodeType": "StructuredDocumentation",
+              "src": "1766:191:26",
+              "text": " @notice Defines a set of stats that can be derived\n @return An enumerable set (actually, an array) of stats that can be derived by the interface implementation*"
+            },
+            "functionSelector": "ae97568c",
+            "id": 8496,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stats",
+            "nameLocation": "1971:5:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8490,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8489,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1985:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "1977:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8488,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1977:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1976:18:26"
+            },
+            "returnParameters": {
+              "id": 8495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8494,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "2018:18:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Stat_$11413_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct Util.Stat[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 8492,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 8491,
+                        "name": "Util.Stat",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 11413,
+                        "src": "2018:9:26"
+                      },
+                      "referencedDeclaration": 11413,
+                      "src": "2018:9:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Stat_$11413_storage_ptr",
+                        "typeString": "struct Util.Stat"
+                      }
+                    },
+                    "id": 8493,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2018:11:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Stat_$11413_storage_$dyn_storage_ptr",
+                      "typeString": "struct Util.Stat[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2017:20:26"
+            },
+            "scope": 8497,
+            "src": "1962:76:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8498,
+        "src": "298:1742:26",
+        "usedErrors": []
+      }
+    ],
+    "src": "251:1790:26"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/IStatsDerive.sol",
+    "exportedSymbols": {
+      "IStatsDerive": [
+        8497
+      ],
+      "Util": [
+        11512
+      ]
+    },
+    "id": 8498,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8431,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "251:23:26"
+      },
+      {
+        "absolutePath": "project:/contracts/Util.sol",
+        "file": "./Util.sol",
+        "id": 8432,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 8498,
+        "sourceUnit": 11513,
+        "src": "276:20:26",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStatsDerive",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 8497,
+        "linearizedBaseContracts": [
+          8497
+        ],
+        "name": "IStatsDerive",
+        "nameLocation": "308:12:26",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 8433,
+              "nodeType": "StructuredDocumentation",
+              "src": "328:80:26",
+              "text": " @notice Token type code\n @return Token type code*"
+            },
+            "functionSelector": "54b10da1",
+            "id": 8438,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "tokenTypeCode",
+            "nameLocation": "422:13:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8434,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "435:2:26"
+            },
+            "returnParameters": {
+              "id": 8437,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8436,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8438,
+                  "src": "461:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8435,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:9:26"
+            },
+            "scope": 8497,
+            "src": "413:57:26",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8439,
+              "nodeType": "StructuredDocumentation",
+              "src": "476:204:26",
+              "text": " @notice Derive an integer stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "30044d42",
+            "id": 8450,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatInt",
+            "nameLocation": "694:10:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8446,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8441,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "713:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "705:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8440,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "705:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8443,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "731:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "723:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8442,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "723:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8445,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "751:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "735:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8444,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "735:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "704:52:26"
+            },
+            "returnParameters": {
+              "id": 8449,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8448,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8450,
+                  "src": "780:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8447,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "780:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "779:9:26"
+            },
+            "scope": 8497,
+            "src": "685:104:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8451,
+              "nodeType": "StructuredDocumentation",
+              "src": "795:202:26",
+              "text": " @notice Derive a string stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "5f560e83",
+            "id": 8462,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatString",
+            "nameLocation": "1011:13:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8458,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8453,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1033:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1025:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8452,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1025:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8455,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1051:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1043:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8454,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1043:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8457,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1071:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1055:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8456,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1055:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1024:52:26"
+            },
+            "returnParameters": {
+              "id": 8461,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8460,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8462,
+                  "src": "1100:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8459,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1100:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1099:17:26"
+            },
+            "scope": 8497,
+            "src": "1002:115:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8463,
+              "nodeType": "StructuredDocumentation",
+              "src": "1123:209:26",
+              "text": " @notice Derive a 32 byte array stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "82913d82",
+            "id": 8474,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatByte32",
+            "nameLocation": "1346:13:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8470,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8465,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1368:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1360:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8464,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1360:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8467,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1386:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1378:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8466,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1378:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8469,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1406:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1390:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8468,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1390:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1359:52:26"
+            },
+            "returnParameters": {
+              "id": 8473,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8472,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8474,
+                  "src": "1435:7:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8471,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1435:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1434:9:26"
+            },
+            "scope": 8497,
+            "src": "1337:107:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8475,
+              "nodeType": "StructuredDocumentation",
+              "src": "1450:203:26",
+              "text": " @notice Derive a boolean stat from the card's ID by the stats' name\n @param id An id generated by an RNG\n @param name The stats' name\n @return The stats' value*"
+            },
+            "functionSelector": "450a52d0",
+            "id": 8486,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStatBool",
+            "nameLocation": "1667:11:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8482,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8477,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1687:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1679:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8476,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1679:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8479,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "1705:2:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1697:10:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8478,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1697:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 8481,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1725:4:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1709:20:26",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8480,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1709:6:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1678:52:26"
+            },
+            "returnParameters": {
+              "id": 8485,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8484,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8486,
+                  "src": "1754:4:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 8483,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1754:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1753:6:26"
+            },
+            "scope": 8497,
+            "src": "1658:102:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 8487,
+              "nodeType": "StructuredDocumentation",
+              "src": "1766:191:26",
+              "text": " @notice Defines a set of stats that can be derived\n @return An enumerable set (actually, an array) of stats that can be derived by the interface implementation*"
+            },
+            "functionSelector": "ae97568c",
+            "id": 8496,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stats",
+            "nameLocation": "1971:5:26",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8490,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8489,
+                  "mutability": "mutable",
+                  "name": "nft_type",
+                  "nameLocation": "1985:8:26",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "1977:16:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8488,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1977:7:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1976:18:26"
+            },
+            "returnParameters": {
+              "id": 8495,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8494,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8496,
+                  "src": "2018:18:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Stat_$11413_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct Util.Stat[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 8492,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 8491,
+                        "name": "Util.Stat",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 11413,
+                        "src": "2018:9:26"
+                      },
+                      "referencedDeclaration": 11413,
+                      "src": "2018:9:26",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Stat_$11413_storage_ptr",
+                        "typeString": "struct Util.Stat"
+                      }
+                    },
+                    "id": 8493,
+                    "nodeType": "ArrayTypeName",
+                    "src": "2018:11:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Stat_$11413_storage_$dyn_storage_ptr",
+                      "typeString": "struct Util.Stat[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2017:20:26"
+            },
+            "scope": 8497,
+            "src": "1962:76:26",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8498,
+        "src": "298:1742:26",
+        "usedErrors": []
+      }
+    ],
+    "src": "251:1790:26"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-02-10T13:47:31.266Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "getStatBool(bytes32,uint256,string)": {
+        "params": {
+          "id": "An id generated by an RNG",
+          "name": "The stats' name"
+        },
+        "returns": {
+          "_0": "The stats' value*"
+        }
+      },
+      "getStatByte32(bytes32,uint256,string)": {
+        "params": {
+          "id": "An id generated by an RNG",
+          "name": "The stats' name"
+        },
+        "returns": {
+          "_0": "The stats' value*"
+        }
+      },
+      "getStatInt(bytes32,uint256,string)": {
+        "params": {
+          "id": "An id generated by an RNG",
+          "name": "The stats' name"
+        },
+        "returns": {
+          "_0": "The stats' value*"
+        }
+      },
+      "getStatString(bytes32,uint256,string)": {
+        "params": {
+          "id": "An id generated by an RNG",
+          "name": "The stats' name"
+        },
+        "returns": {
+          "_0": "The stats' value*"
+        }
+      },
+      "stats(bytes32)": {
+        "returns": {
+          "_0": "An enumerable set (actually, an array) of stats that can be derived by the interface implementation*"
+        }
+      },
+      "tokenTypeCode()": {
+        "returns": {
+          "_0": "Token type code*"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getStatBool(bytes32,uint256,string)": {
+        "notice": "Derive a boolean stat from the card's ID by the stats' name"
+      },
+      "getStatByte32(bytes32,uint256,string)": {
+        "notice": "Derive a 32 byte array stat from the card's ID by the stats' name"
+      },
+      "getStatInt(bytes32,uint256,string)": {
+        "notice": "Derive an integer stat from the card's ID by the stats' name"
+      },
+      "getStatString(bytes32,uint256,string)": {
+        "notice": "Derive a string stat from the card's ID by the stats' name"
+      },
+      "stats(bytes32)": {
+        "notice": "Defines a set of stats that can be derived"
+      },
+      "tokenTypeCode()": {
+        "notice": "Token type code"
+      }
+    },
+    "version": 1
+  }
+}
