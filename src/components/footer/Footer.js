@@ -89,7 +89,7 @@ function Footer() {
               </div>
             </li>
             <li className="footer-li">
-            dApp Version: 1.0.1
+            dApp Version: 1.0.2
             </li>
           </ul>
           <br/>
